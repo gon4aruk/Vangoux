@@ -4,9 +4,17 @@
   width: 100%;
   padding: 0 60px 60px 60px;
   background: linear-gradient(#1968fc08, #1968fc08);
+  position: relative;
 
   @include for-large-up {
-      padding: 120px 160px;
+    width: 1120px;
+    padding: 0;
+    margin: 120px auto;
+    background: none;
+  }
+
+  &__line {
+    top: 130px;
   }
 
   &__title {
@@ -18,13 +26,13 @@
   }
 
   &__container {
-    margin-top: 38px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
 
     @include for-large-up {
-        flex-direction: row;
-        flex-wrap: wrap;
+      flex-direction: row;
+      flex-wrap: wrap;
     }
   }
 }
@@ -38,22 +46,22 @@
   margin-top: 40px;
 
   &:first-child {
-      margin-top: 0;
+    margin-top: 0;
   }
 
   @include for-large-up {
-      max-width: 540px;
+    max-width: 540px;
 
-      &:first-child {
-        margin-right: 40px;
+    &:first-child {
+      margin-right: 40px;
     }
 
-      &:nth-child(2) {
-          margin-top: 0;
-      }
+    &:nth-child(2) {
+      margin-top: 0;
+    }
 
-      &:nth-child(3) {
-        margin-right: 40px;
+    &:nth-child(3) {
+      margin-right: 40px;
     }
   }
 

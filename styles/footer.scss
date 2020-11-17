@@ -13,29 +13,6 @@
     padding: 0;
   }
 
-  &__logo {
-    margin: 0;
-    @include for-large-up {
-      margin-left: 160px;
-    }
-  }
-
-  &__logo-text {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 20px;
-    margin-left: 0;
-  }
-
-  &__logo-text-rectangle {
-    height: 50px;
-    width: 200px;
-    background-color: #1968fc0d;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
   &__navigation {
     display: none;
 
@@ -73,6 +50,29 @@
       left: 1190px;
       height: 100px;
     }
+  }
+}
+
+.footer-logo {
+  margin: 0;
+  @include for-large-up {
+    margin-left: 160px;
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 0;
+  }
+
+  &__text-rectangle {
+    height: 50px;
+    width: 200px;
+    background-color: #1968fc0d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 

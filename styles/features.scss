@@ -3,10 +3,20 @@
   padding: 0 60px 125px 60px;
   display: flex;
   flex-direction: column;
+  position: relative;
 
   @include for-large-up {
-      padding: 120px 160px 0 160px;
-  }
+      padding: 0;
+      margin: auto;
+      margin-top: 120px;
+      background: none;
+    }
+
+    &__line {
+      @include for-large-down {
+        top: 70px;
+      }
+    }
 
   &__title {
     font-size: 30px;
@@ -29,17 +39,17 @@
   }
 }
 
-.features-steps {
+.features-list {
   display: flex;
   flex-direction: column;
-  margin-top: 48px;
+  margin-top: 60px;
 
   @include for-large-up {
       flex-direction: row;
   }
 }
 
-.features-step {
+.feature {
   background-color: $color-white;
   width: 100%;
   display: flex;

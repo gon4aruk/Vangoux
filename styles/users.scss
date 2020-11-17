@@ -4,9 +4,20 @@
   background: linear-gradient(#1968fc08, #1968fc08);
   display: flex;
   flex-direction: column;
+  position: relative;
 
   @include for-large-up {
-      padding: 120px 160px 0 160px;
+    width: 1120px;
+    padding: 0;
+    margin: auto;
+    margin-top: 120px;
+    background: none;
+  }
+
+  &__line {
+    @include for-large-down {
+       top: 70px;
+    }
   }
 
   &__title-mobile {
@@ -17,7 +28,7 @@
     margin: 0;
 
     @include for-large-up {
-        display: none;
+      display: none;
     }
   }
 
@@ -30,22 +41,22 @@
     margin: 0;
 
     @include for-large-up {
-        display: block;
+      display: block;
     }
   }
 
   &__container-mobile {
-    margin-top: 28px;
+    margin-top: 60px;
     display: flex;
     flex-wrap: wrap;
 
     @include for-large-up {
-        display: none;
+      display: none;
     }
   }
 }
 
-.user-card {
+.user {
   background-color: $color-white;
   padding: 20px;
   margin-right: 20px;
@@ -81,31 +92,29 @@
   }
 }
 
-
 .users__container-desktop {
-    margin-top: 38px;
-    display: flex;
-    flex-direction: column;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
 
-    @include for-large-down {
-        display: none;
-    }
+  @include for-large-down {
+    display: none;
+  }
 }
 
-.user-card-desktop {
-    padding: 20px;
-    max-width: 360px;
-    background-color: $color-white;
-    box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
+.user-desktop {
+  padding: 20px;
+  max-width: 360px;
+  background-color: $color-white;
+  box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
 }
 
 .users-top-line {
-    display: flex;
-    justify-content: space-between;
-
+  display: flex;
+  justify-content: space-between;
 }
 .users-bottom-line {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
 }

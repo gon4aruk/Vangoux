@@ -2,9 +2,20 @@
   display: flex;
   flex-direction: column;
   padding: 60px;
+  position: relative;
 
   @include for-large-up {
-      padding: 120px 160px;
+    width: 1120px;
+    padding: 0;
+    margin: 120px auto;
+    background: none;
+  }
+
+  &__line {
+    @include for-large-down {
+      top: 130px;
+      left: 60px;
+    }
   }
 
   &__title {
@@ -12,31 +23,32 @@
     line-height: 60px;
     text-transform: uppercase;
     margin: 0;
+    font-weight: 400;
   }
 
   &__container {
     display: flex;
     flex-direction: column;
-    margin-top: 38px;
+    margin-top: 50px;
 
     @include for-large-up {
-        margin-top: 48px;
-        flex-direction: row;
+      margin-top: 60px;
+      flex-direction: row;
     }
   }
 }
 
-.story {
+.story-card {
   position: relative;
   width: 100%;
 
   &:last-child {
-      margin-top: 40px;
+    margin-top: 40px;
 
-      @include for-large-up {
-          margin-top: 0;
-          margin-left: 150px;
-      }
+    @include for-large-up {
+      margin-top: 0;
+      margin-left: 150px;
+    }
   }
 
   &__title {
@@ -47,7 +59,7 @@
     color: $color-black;
     margin-left: 60px;
   }
- 
+
   &__description {
     font-size: 16px;
     line-height: 30px;
@@ -58,17 +70,21 @@
   }
 
   &__description3 {
-      margin-bottom: 20px;
+    margin-bottom: 20px;
 
-      @include for-large-up {
-          margin-bottom: 0;
-      }
+    @include for-large-up {
+      margin-bottom: 0;
+    }
   }
 
   &__icon {
-      position: absolute;
-      max-width: 100%;
-      top: 4px;
-      left: 0;
+    position: absolute;
+    max-width: 100%;
+    top: 4px;
+    left: 0;
   }
+}
+
+.story:last-child .story__description1 {
+  width: 280px;
 }

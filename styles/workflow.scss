@@ -3,11 +3,20 @@
   flex-direction: column;
   padding: 70px 60px 125px 60px;
   background: linear-gradient(#1968fc1a, #1968fc08);
+  position: relative;
 
   @include for-large-up {
-    width: 1440px;
-    padding: 0 160px;
-    padding-top: 120px;
+    width: 1120px;
+    padding: 0;
+    margin: auto;
+    margin-top: 120px;
+    background: none;
+  }
+
+  &__line {
+    @include for-large-down {
+      top: 140px;
+    }
   }
 
   &__title {
@@ -22,10 +31,10 @@
 .workflow-steps {
   display: flex;
   flex-direction: column;
-  margin-top: 48px;
+  margin-top: 60px;
 
   @include for-large-up {
-    margin-top: 38px;
+    margin-top: 50px;
     flex-direction: row;
   }
 }
@@ -121,13 +130,4 @@
   }
 }
 
-.undertitle-line {
-  width: 80px;
-  border-bottom: 2px solid $color-blue;
-  margin-top: 10px;
-  box-shadow: 0px 2px 0px #D1E1FE;
 
-  @include for-large-up {
-    margin-left: -40px;
-  }
-}
