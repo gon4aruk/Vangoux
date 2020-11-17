@@ -1,0 +1,133 @@
+.workflow {
+  display: flex;
+  flex-direction: column;
+  padding: 70px 60px 125px 60px;
+  background: linear-gradient(#1968fc1a, #1968fc08);
+
+  @include for-large-up {
+    width: 1440px;
+    padding: 0 160px;
+    padding-top: 120px;
+  }
+
+  &__title {
+    font-size: 30px;
+    line-height: 60px;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 400;
+  }
+}
+
+.workflow-steps {
+  display: flex;
+  flex-direction: column;
+  margin-top: 48px;
+
+  @include for-large-up {
+    margin-top: 38px;
+    flex-direction: row;
+  }
+}
+
+.workflow-step {
+  padding: 40px;
+  position: relative;
+  background-color: $color-white;
+  position: relative;
+  box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
+
+  @include for-large-up {
+    width: 320px;
+    height: 220px;
+
+    &:nth-child(3) {
+      margin-top: 40px;
+    }
+
+    &:nth-child(5) {
+      margin-top: 80px;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: $color-blue;
+    margin: 0;
+  }
+
+  &__description {
+    margin: 0;
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 30px;
+
+    @include for-large-up {
+        margin-top: 20px;
+    }
+  }
+
+  &__decoration {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+}
+
+.connect-card-line {
+  width: 1px;
+  height: 40px;
+  border-left: 2px dashed $color-blue;
+  margin-left: 60px;
+
+  &:nth-child(4) {
+      @include for-large-up {
+          margin-top: 150px;
+      }
+  }
+
+  @include for-large-up {
+    height: 1px;
+    width: 70px;
+    border-left: 0;
+    border-top: 2px dashed $color-blue;
+    margin: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 110px;
+  }
+}
+
+.card-decoration {
+  position: absolute;
+  top: 161px;
+  left: 500px;
+  z-index: 1;
+
+  @include for-large-up {
+      top: 200px;
+      left: 300px;
+  }
+}
+
+.undertitle-line {
+  width: 80px;
+  border-bottom: 2px solid $color-blue;
+  margin-top: 10px;
+  box-shadow: 0px 2px 0px #D1E1FE;
+
+  @include for-large-up {
+    margin-left: -40px;
+  }
+}

@@ -1,0 +1,41 @@
+@import "variables.scss";
+@import "breakpoint.scss";
+@import "header.scss";
+@import "headline.scss";
+@import "reviews.scss";
+@import "footer.scss";
+@import "workflow.scss";
+@import "features.scss";
+@import "users.scss";
+@import "purposes.scss";
+@import "consultation.scss";
+@import "stories.scss";
+
+html {
+  font-family: "Mulish", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page {
+  width: 100%;
+  color: $text-color;
+  display: flex;
+  flex-direction: column;
+  background-color: 1968fc;
+
+  @include for-large-up {
+    width: 1440px;
+    margin: auto;
+    background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/BackgroundDecor.png");
+  }
+}
+
+.top-section {
+  background: linear-gradient(#1968FC03, #1968FC1A);
+}
+
+
+
