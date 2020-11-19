@@ -10,8 +10,7 @@
 .logo {
   display: flex;
   align-items: center;
-  margin-left: 80px;
-  margin-top: 40px;
+  margin: 40px 400px 0 80px;
 
   @include for-large-up {
     margin: 0;

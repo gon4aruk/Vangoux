@@ -10,8 +10,7 @@
 .logo {
   display: flex;
   align-items: center;
-  margin-left: 80px;
-  margin-top: 40px;
+  margin: 40px 400px 0 80px;
 }
 @media screen and (min-width: 1024px) {
   .logo {
@@ -267,7 +266,7 @@
   margin: 0;
 }
 
-.footer {
+.page-footer {
   display: flex;
   align-items: center;
   position: relative;
@@ -277,26 +276,26 @@
   width: 100%;
 }
 @media screen and (min-width: 1024px) {
-  .footer {
+  .page-footer {
     width: 1440px;
     height: 130px;
     padding: 0;
   }
 }
-.footer__navigation {
+.page-footer__navigation {
   display: none;
 }
 @media screen and (min-width: 1024px) {
-  .footer__navigation {
+  .page-footer__navigation {
     display: block;
   }
 }
-.footer__navigation-list {
+.page-footer__navigation-list {
   display: flex;
   list-style-type: none;
   margin-left: 70px;
 }
-.footer__navigation-list__item {
+.page-footer__navigation-list__item {
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
@@ -306,7 +305,7 @@
   width: 120px;
   height: 50px;
 }
-.footer__decoration {
+.page-footer__decoration {
   position: absolute;
   max-width: 100%;
   height: 55px;
@@ -314,28 +313,28 @@
   left: 545px;
 }
 @media screen and (min-width: 1024px) {
-  .footer__decoration {
+  .page-footer__decoration {
     top: 30px;
     left: 1190px;
     height: 100px;
   }
 }
 
-.footer-logo {
+.page-footer-logo {
   margin: 0;
 }
 @media screen and (min-width: 1024px) {
-  .footer-logo {
+  .page-footer-logo {
     margin-left: 160px;
   }
 }
-.footer-logo__text {
+.page-footer-logo__text {
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
   margin-left: 0;
 }
-.footer-logo__text-rectangle {
+.page-footer-logo__text-rectangle {
   height: 50px;
   width: 200px;
   background-color: #1968fc0d;
@@ -344,11 +343,11 @@
   justify-content: center;
 }
 
-.footer-links {
+.page-footer-links {
   display: flex;
   margin-left: 50px;
 }
-.footer-links__container {
+.page-footer-links__container {
   width: 50px;
   height: 50px;
   display: flex;
@@ -586,7 +585,7 @@
 .feature__logo-text {
   font-weight: 600;
   font-size: 20px;
-  line-height: 40px;
+  line-height: 30px;
   margin: 0;
   margin-left: 20px;
 }
@@ -818,6 +817,7 @@
   text-transform: uppercase;
   margin: 0;
   color: #ffffff;
+  display: inline-block;
 }
 .consultation__line {
   width: 80px;
@@ -842,7 +842,7 @@
 }
 @media screen and (min-width: 1024px) {
   .consultation__description {
-    max-width: 620px;
+    max-width: 629px;
     margin-top: 60px;
   }
 }
@@ -870,6 +870,10 @@
     top: 20px;
     right: 1px;
   }
+}
+
+.stories-background {
+  background-color: #ffffff;
 }
 
 .stories {
