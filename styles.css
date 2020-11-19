@@ -320,21 +320,21 @@
   }
 }
 
-.page-footer-logo {
+.footer-logo {
   margin: 0;
 }
 @media screen and (min-width: 1024px) {
-  .page-footer-logo {
+  .footer-logo {
     margin-left: 160px;
   }
 }
-.page-footer-logo__text {
+.footer-logo__text {
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
   margin-left: 0;
 }
-.page-footer-logo__text-rectangle {
+.footer-logo__text-rectangle {
   height: 50px;
   width: 200px;
   background-color: #1968fc0d;
