@@ -8,7 +8,3 @@ The site is available at https://gon4aruk.github.io/Vangoux/
 - Flexbox
 - Sass (Scss)
 - BEM methodology
-
-**Author**
-
-Oleksandr Honcharuk
